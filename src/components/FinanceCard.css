@@ -1,0 +1,126 @@
+.finance-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.finance-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.finance-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.finance-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.finance-card-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.finance-card-category {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+}
+
+.finance-card-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
+
+.finance-card-description {
+  color: #555;
+  line-height: 1.6;
+  margin: 0.5rem 0 1rem;
+}
+
+.finance-card-methodology {
+  margin-bottom: 1rem;
+}
+
+.finance-card-methodology h4,
+.finance-card-benefits h4 {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.finance-card-methodology p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.finance-card-benefits {
+  margin-bottom: 1rem;
+}
+
+.finance-card-benefits ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #666;
+}
+
+.finance-card-benefits li {
+  margin: 0.25rem 0;
+  line-height: 1.5;
+}
+
+.finance-card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  flex: 1;
+}
+
+.btn-edit {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #2980b9;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
